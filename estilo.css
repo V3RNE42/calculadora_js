@@ -1,5 +1,4 @@
 * {
-    background-color: aquamarine;
     color: #004510;
 }
 .calculadora {
@@ -11,9 +10,39 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
+.carcasa {
+    background-color: rgb(62, 61, 61);
+    padding: 2.2em;
+    border: #000000;
+    border-radius: 0.75em;
+    border-style: solid;
+}
+.pantalla {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(214, 206, 206);
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    width: 11em;
+    min-height: 8.5em;
+    border-radius: 0.4em;
+    padding: 0.4em;
+    border: #000000;
+    border-style: solid;
+}
+#pantSup{
+    min-height: 3.75em;
+
+}
+#pantInf{
+    min-height: 3.75em;
+
+}
 .box {
+    background-color: lightgoldenrodyellow;
     margin: 0.3em;
-    border-radius: 0.2em;
+    border-radius: 0.9em;
     min-width: 3em;
     min-height: 3em;
     box-shadow: 0.5em 0.25em #000000;
