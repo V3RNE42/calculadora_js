@@ -2,32 +2,15 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./estilo.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./estilo.css" />
+    <script defer type="text/javascript" src="./21-ABRIL-2022.js"></script>
     <title>Calculadora Guapa</title>
 </head>
 
 <body>
-    <h1 id="texto1">Hola guapis</h1>
-    <input type="button" class="box" value="subir" onclick="ascensor(1)">
-    <br>
-    <h2 id="numero">0</h2>
-    <br>
-    <input type="button" class="box" value="bajar" onclick="ascensor(-1)">
-    <br><br><br><br>
-    <p>
-    <h2>Calculadora</h2> <br>
-    <input type="text" id="num1"></input>
-    +
-    <input type="text" id="num2"></input>
-    =
-    <h2 type="text" id="resultado"></h2>
-    </p>
-    <input type="button" class="box" value=" suma" id="sume" onclick="sumar()">
-    <br><br><br><br>
-
     <div class="calculadora">
         <div class="carcasa">
             <div class="pantalla" id="screen">
@@ -38,74 +21,72 @@
                 <tr>
                     <td></td>
                     <td>
-                        <input class="box" type="button" value="C" id="C" onclick="borraPantalla()">
+                        <input class="box" colspan="2" type="button" value="C" id="C" onclick="borraPantalla()" />
                     </td>
                     <td>
-                        <input class="box" type="button" value="<[x]" id="<[x]" onclick="elimina()">
+                        <input class="box" type="button" value="<[x]" id="<[x]" onclick="elimina()" />
                     </td>
                     <td>
-                        <input class="box" type="button" value="/" id="/" onclick="inserta('/')">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input class="box" type="button" value="7" id="7" onclick="inserta(7)">
-                    </td>
-                    <td>
-                        <input class="box" type="button" value="8" id="8" onclick="inserta(8)">
-                    </td>
-                    <td>
-                        <input class="box" type="button" value="9" id="9" onclick="inserta(9)">
-                    </td>
-                    <td>
-                        <input class="box" type="button" value="x" id="x" onclick="inserta('x')">
+                        <input class="box" type="button" value="/" id="/" onclick="inserta(id)" />
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <input class="box" type="button" value="4" id="4" onclick="inserta(4)">
+                        <input class="box" type="button" value="7" id="7" onclick="inserta(7)" />
                     </td>
                     <td>
-                        <input class="box" type="button" value="5" id="5" onclick="inserta(5)">
+                        <input class="box" type="button" value="8" id="8" onclick="inserta(8)" />
                     </td>
                     <td>
-                        <input class="box" type="button" value="6" id="6" onclick="inserta(6)">
+                        <input class="box" type="button" value="9" id="9" onclick="inserta(9)" />
                     </td>
                     <td>
-                        <input class="box" type="button" value="-" id="-" onclick="inserta('-')">
+                        <input class="box" type="button" value="x" id="x" onclick="inserta(id)" />
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <input class="box" type="button" value="1" id="1" onclick="inserta(1)">
+                        <input class="box" type="button" value="4" id="4" onclick="inserta(4)" />
                     </td>
                     <td>
-                        <input class="box" type="button" value="2" id="2" onclick="inserta(2)">
+                        <input class="box" type="button" value="5" id="5" onclick="inserta(5)" />
                     </td>
                     <td>
-                        <input class="box" type="button" value="3" id="3" onclick="inserta(3)">
+                        <input class="box" type="button" value="6" id="6" onclick="inserta(6)" />
                     </td>
                     <td>
-                        <input class="box" type="button" value="+" id="+" onclick="inserta('+')">
+                        <input class="box" type="button" value="-" id="-" onclick="inserta(id)" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="box" type="button" value="1" id="1" onclick="inserta(1)" />
+                    </td>
+                    <td>
+                        <input class="box" type="button" value="2" id="2" onclick="inserta(2)" />
+                    </td>
+                    <td>
+                        <input class="box" type="button" value="3" id="3" onclick="inserta(3)" />
+                    </td>
+                    <td>
+                        <input class="box" type="button" value="+" id="+" onclick="inserta(id)" />
                     </td>
                 </tr>
                 <tr>
                     <td></td>
                     <td>
-                        <input class="box" type="button" value="0" id="0" onclick="inserta(0)">
+                        <input class="box" type="button" value="0" id="0" onclick="inserta(id)" />
                     </td>
                     <td>
-                        <input class="box" type="button" value="," id="," onclick="inserta('.')">
+                        <input class="box" type="button" value="." id="." onclick="inserta(id)" />
                     </td>
                     <td>
-                        <input class="box" type="button" value="=" id="=" onclick="imprimeResultado()">
+                        <input class="box" type="button" value="=" id="=" onclick="imprimeResultado()" />
                     </td>
                 </tr>
             </table>
         </div>
     </div>
-
-    <script type="text/javascript" src="./21-ABRIL-2022.js"></script>
 </body>
 
 </html>
